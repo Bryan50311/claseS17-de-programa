@@ -1,7 +1,3 @@
--- =====================================================================
--- SCRIPT SQL PARA phpMyAdmin (XAMPP MySQL)
--- Proyecto: Sistema de Inventario de Libros
--- =====================================================================
 
 -- 1. Crear la base de datos si no existe
 CREATE DATABASE IF NOT EXISTS `libreria_db` 
@@ -16,7 +12,7 @@ DROP TABLE IF EXISTS `books`;
 DROP TABLE IF EXISTS `categories`;
 SET FOREIGN_KEY_CHECKS = 1;
 
--- 3. Crear tabla de Categorías (categories)
+-- 3. Crear tabla de Categorías 
 CREATE TABLE `categories` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `nombre` varchar(255) NOT NULL,
